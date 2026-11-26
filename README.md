@@ -1,3 +1,29 @@
+# PROJECT MIRROR – Digital Twin for Cybersecurity Simulation
+
+B.Tech CSE major project, Amity University Mumbai, 2026-27.
+Team: Anshika, Akshita, Aarya, Aditya. Guide: Dr. Garima Bhardwaj.
+
+PROJECT MIRROR builds a safe virtual copy (digital twin) of a device or network, simulates attack paths on the copy, scores the risk, and lets fixes be tested on the copy before they are applied to the real system.
+
+## Credit and licence
+This repository is adapted from **AI Digital Twin Security Agent** by chennuhari
+(https://github.com/chennuhari/AI-Digital-Twin-Security-Agent), released under the MIT License. The original licence and copyright notice are kept in `LICENSE`. The original README is kept as `README_ORIGINAL.md`.
+
+## Our work
+- Literature survey, requirements, system design, synopsis and presentation.
+- [List here only what you actually changed or added in the code.]
+
+## Planned
+- Inventory import, CVE/CVSS mapping, our risk formula, an ML traffic classifier and an isolated Docker lab.
+
+## Run locally
+Backend: `cd fastapi-backend && python3.12 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt && uvicorn main:app --reload --port 8001`
+Frontend: `cd frontend && npm install && npm run dev` then open http://localhost:5173
+
+## Disclaimer
+Educational use only. Scan only devices and networks you own or have permission to test. Results are decision support, not a guarantee of security.
+
+---
 # 🛡️ AI Digital Twin Security Agent (TwinAgent AI)
 
 <p align="center">
