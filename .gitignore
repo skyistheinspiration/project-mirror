@@ -40,3 +40,13 @@ yarn-error.log*
 *.ipr
 .DS_Store
 Thumbs.db
+
+# Local databases
+*.db
+*.sqlite3
+.vercel/
+
+# Local databases
+*.db
+*.sqlite3
+.vercel/
