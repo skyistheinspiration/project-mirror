@@ -12,6 +12,7 @@ from routers.defense import router as defense_router
 from routers.risk import router as risk_router
 from routers.graph import graph_router, analysis_router
 from routers.history import router as history_router
+from live_monitor import router as live_monitor_router
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("AI-Digital-Twin")
@@ -112,6 +113,7 @@ app.include_router(risk_router)
 app.include_router(graph_router)
 app.include_router(analysis_router)
 app.include_router(history_router)
+app.include_router(live_monitor_router)
 
 @app.get("/")
 def root():

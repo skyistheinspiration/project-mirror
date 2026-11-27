@@ -50,6 +50,8 @@ import ThreatPage from "./pages/ThreatPage";
 import DefensePage from "./pages/DefensePage";
 import RiskPage from "./pages/RiskPage";
 import AuditPage from "./pages/AuditPage";
+import ResponseSimulatorPage from "./pages/ResponseSimulatorPage";
+import LiveNetworkPage from "./pages/LiveNetworkPage";
 import WholeDeviceScannerModal from "./components/WholeDeviceScannerModal";
 import AiSecurityCopilot from "./components/AiSecurityCopilot";
 import DefendFortressGameModal from "./components/DefendFortressGameModal";
@@ -66,6 +68,8 @@ const PAGES = [
   { id: "defense", number: "05", category: "SUPER DETECTIVES", label: "Super Locks 🛡️", icon: ShieldCheck, title: "Super Guardian - 1-Click Protective Padlocks" },
   { id: "risk", number: "06", category: "SAFETY REPORT", label: "Safety Score ⭐", icon: Activity, title: "Gold Star Score - Is My Device Happy & Safe?" },
   { id: "audit", number: "07", category: "SAFETY REPORT", label: "Robot Diary 📜", icon: TerminalSquare, title: "Diary of Everything Our Robot Did" },
+  { id: "response", number: "08", category: "SAFETY REPORT", label: "Incident Response 🛡️", icon: ShieldCheck, title: "Incident Response & Recovery Simulator" },
+  { id: "live-network", number: "08", category: "SAFETY REPORT", label: "Live Network 📡", icon: Radio, title: "Live Network Intelligence Monitor" },
 ];
 
 function LoginPanel({ onLogin }) {
@@ -1741,6 +1745,11 @@ export default function App() {
             switchPage={switchPage}
           />
         )}
+
+        {activePage === "live-network" && <LiveNetworkPage />}
+
+        {/* 9. INCIDENT RESPONSE & RECOVERY SIMULATOR */}
+        {activePage === "response" && <ResponseSimulatorPage />}
       </main>
 
       {/* Global Footer */}
